@@ -1,0 +1,259 @@
+
+/* +++++ Typography +++++ */
+@font-face {
+    font-family: 'heading';
+    src: url('../Fonts/LEMONMILK-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'peragraph';
+    src: url('../Fonts/Jost-Regular.ttf') format('truetype');
+}
+
+
+h1 {
+    font-family: 'heading', sans-serif;
+    margin: 1em 0 0 0;
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'heading', sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: 'heading', sans-serif;
+}
+
+p {
+    font-family: 'peragraph', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'peragraph', sans-serif;
+}
+
+/* +++++ Animations +++++ */
+@keyframes foalting {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+
+}
+
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        
+    }
+}
+
+.summary,
+.preamble,
+header {
+    animation: floatIn 5s ease-in-out 1;
+    
+}
+
+
+li:hover,
+img:hover {
+    animation: foalting 2.5s infinite alternate;
+}
+
+/* +++++ Layout +++++ */
+html {
+    background-image: url('../Images/history-in-hd-e5eDHbmHprg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    cursor: url(../Images/icons8-07-space-58.png) 2 1, auto;
+}
+
+/* { section 1 } */
+body section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15em;
+}
+
+
+.preamble {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+img {
+    margin: 4em 0 36.1em 0;
+    transform: scale(1);
+}
+
+.preamble p {
+    text-align: center;
+    margin: 0em 10em 1em 10em;
+    background-color: rgba(40, 37, 37, 0.825);
+    border-radius: 2em;
+    padding: 2em;  
+    font-size: 1.3rem;  
+}
+
+.preamble h3 {
+    background-color: rgba(40, 37, 37, 0.825);
+    border-radius: 15em;
+    padding: 1em;  
+}
+
+.summary p {
+    text-align: center;
+    text-align-last: center;
+    font-size: 1.3rem;   
+}
+
+/* { section 2 } */
+#zen-supporting {
+    background-color: rgba(40, 37, 37, 0.825);
+    border-radius: 2em;
+    padding: 1.5em;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.benefits,
+.explanation {
+    text-align: end;
+    margin: 0 0 0 14em;
+}
+
+.participation,
+.requirements {
+    text-align: start;
+    margin: 0 3em 0 0;
+}
+
+.requirements p:nth-of-type(5) {
+    text-align: center;
+    margin: 5em 0 3em 2em;
+    word-spacing: 0.1em;
+    letter-spacing: 0.4rem;
+}
+
+footer {
+    word-spacing: 1.3rem;
+    letter-spacing: 0.4rem;
+}
+
+/* { Section 3 } */
+.wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.wrapper div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(40, 37, 37, 0.825);
+    font-size: 1.3rem;
+    border-radius: 2em;
+}
+
+/* Design Archives */
+.design-archives {
+    margin: 2em 1em 0em 1em; 
+}
+
+.design-archives > nav > ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0em;
+}
+
+.design-archives li {
+    margin: 0 2em 0 2em;
+    background-color: black;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+/* Design Selection */
+.design-selection {
+    width: 56%;
+    margin: 1.5em 1em 2em 1em;
+    padding: 2em;
+}
+
+.design-selection > nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+    gap: 3em;
+}
+
+.design-selection li {
+    width: 10em;
+    text-align: center;
+    background-color: black;
+    padding: 1em;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Zen Resources */
+.zen-resources { 
+    margin: 4em 1em 2em 1em;
+    padding: 2em;
+}
+
+.zen-resources ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    gap: 3em;
+}
+
+.zen-resources li {
+    width: 5em;
+    background-color: black;
+    padding: 1em;
+    border-radius: 2em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
