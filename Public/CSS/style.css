@@ -182,41 +182,38 @@ footer {
     word-spacing: 1.3rem;
     letter-spacing: 0.4rem;
     text-align: center;
+    display: flex;
+}
+
+footer a {
+    padding: 0.3em;
+    border-radius: 1.5em;
+    margin: 0.2em;
 }
 
 footer > a {
     color: black;
     background-color: white;
-    padding: 1em;
-    border-radius: 1.5em;
 }
 
 footer a + a  {
     color: white;
     background-color: black;
-    padding: 1em;
-    border-radius: 1.5em;
 }
 
 footer a + a + a {
     color: black;
     background-color: white;
-    padding: 1em;
-    border-radius: 1.5em;
 }
 
 footer a + a + a + a {
     color: white;
     background-color: black;
-    padding: 1em;
-    border-radius: 1.5em;
 }
 
 footer a + a + a + a ~ a {
     color: black;
     background-color: white;
-    padding: 1em;
-    border-radius: 1.5em;
 }
 
 /* { Section 3 } */
