@@ -71,7 +71,6 @@ header {
     text-align: center;
 }
 
-
 li:hover,
 img:hover {
     animation: foalting 2.5s infinite alternate;
@@ -117,7 +116,7 @@ body section {
     align-items: center; 
 }
 
-img {
+img[alt="mars"] {
     margin: 4em 0 36.1em 0;
     transform: scale(1);
 }
@@ -164,6 +163,14 @@ img {
     margin: 0 3em 0 0;
 }
 
+.benefits p::first-line,
+.explanation p::first-line,
+.participation p::first-line,
+.requirements p::first-line {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .requirements p:nth-of-type(5) {
     text-align: center;
     margin: 5em 0 3em 2em;
@@ -175,6 +182,41 @@ footer {
     word-spacing: 1.3rem;
     letter-spacing: 0.4rem;
     text-align: center;
+}
+
+footer > a {
+    color: black;
+    background-color: white;
+    padding: 1em;
+    border-radius: 1.5em;
+}
+
+footer a + a  {
+    color: white;
+    background-color: black;
+    padding: 1em;
+    border-radius: 1.5em;
+}
+
+footer a + a + a {
+    color: black;
+    background-color: white;
+    padding: 1em;
+    border-radius: 1.5em;
+}
+
+footer a + a + a + a {
+    color: white;
+    background-color: black;
+    padding: 1em;
+    border-radius: 1.5em;
+}
+
+footer a + a + a + a ~ a {
+    color: black;
+    background-color: white;
+    padding: 1em;
+    border-radius: 1.5em;
 }
 
 /* { Section 3 } */
